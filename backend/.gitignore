@@ -1,0 +1,45 @@
+# Dependencies
+node_modules/
+dist/
+tmp/
+uploads/originals/ # Dependendo da estratégia, pode querer versionar exemplos
+uploads/generated_pdfs/ # Dependendo da estratégia
+
+# Environment variables
+.env
+.env.test
+.env.production
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE settings & cache
+.idea/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+*.db
+*.db-journal
+
+coverage/
+.jest-cache/
+
+# Outros
+*.tsbuildinfo

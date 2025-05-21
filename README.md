@@ -1,5 +1,8 @@
 ## Visão Geral da Solução
 
+[Screen Recording 2025-05-21 110809.webm](https://github.com/user-attachments/assets/c18da990-1bdc-4f27-be3f-89b03538c6c7)
+
+
 A plataforma permite que professores realizem o upload de planos de aula existentes (PDF ou DOCX), visualizem uma prévia, extraiam informações chave para um formulário e, finalmente, gerem um novo PDF padronizado com o layout de sua escolha.
 
 **Fluxo Principal:**
@@ -28,7 +31,7 @@ A plataforma permite que professores realizem o upload de planos de aula existen
 1.  **Clonar Repositório:**
 
     ```bash
-    git clone [URL_DO_SEU_REPOSITORIO_AQUI]
+    git clone https://github.com/luanvenancio/gerenciador-plano-de-aulas.git
     cd gerenciador-plano-de-aulas
     ```
 
@@ -64,6 +67,7 @@ A plataforma permite que professores realizem o upload de planos de aula existen
 - **Erros do Prisma Client** (ex: `Cannot find module '.prisma/client/default'`, `Module '"@prisma/client"' has no exported member 'LessonPlan'`):
   Execute `npx prisma generate` e `npx prisma migrate dev` na pasta `backend`.
 - **Falha na Inicialização do GeminiLlmService:** Verifique as variáveis de ambiente do Gemini no `.env` do backend.
+- **Problemas na Extração de Dados de Arquivos Grandes:** Se um arquivo de plano de aula for muito extenso, a extração de dados pela IA pode falhar ou ser incompleta. Isso ocorre devido aos limites de tokens de entrada (`inputTokens`) e/ou saída (`maxOutputTokens`) do modelo de linguagem.
 
 ## Decisões de Design e Suposições
 
